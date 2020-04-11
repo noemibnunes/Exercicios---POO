@@ -86,9 +86,11 @@ public class Carro {
 	}
 	
 	/** QUESTÃO 3 
+	 
 	 * Praticidade, tendo em vista que quando promocao era uma variável de classe, ao referenciar 
 	 essa variavél todos os carros já receberam a promoção. Quando promocao era uma variável de instância
 	 cada carro precisou ser instanciado para receber a promoção.
+	 
 	**/
 	
 }
