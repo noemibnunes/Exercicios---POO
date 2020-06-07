@@ -60,7 +60,7 @@ public class MortalKombat {
 					}
 				}
 				
-				else if (l1.getNome().equals("Sônia")) {
+				else if (l1.getNome().equals("SÃ´nia")) {
 					
 					if(ataque == 0) {
 						l1.chutar(l2);
@@ -107,7 +107,7 @@ public class MortalKombat {
 				
 				}
 				
-				else if (l2.getNome().equals("Sônia")) {
+				else if (l2.getNome().equals("SÃ´nia")) {
 					
 					if(ataque == 0) {
 						l2.chutar(l1);
@@ -123,11 +123,11 @@ public class MortalKombat {
 	}
 	
 	public String fimFight() {
-		String vencedor;
+		String vencedor = null;
 		if(l1.getVida() < 0) {
-			vencedor = l1.getNome();
-		} else {
 			vencedor = l2.getNome();
+		} else if (l2.getVida() < 0) {
+			vencedor = l1.getNome();
 		}
 		return vencedor;
 	}
